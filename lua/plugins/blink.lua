@@ -3,6 +3,7 @@ return {
   dependencies = {
     'saghen/blink.lib',
   },
+  event = 'VeryLazy',
 
   build = function()
     require('blink.cmp').build():wait(60000)
