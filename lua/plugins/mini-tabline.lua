@@ -1,6 +1,6 @@
 return {
   'nvim-mini/mini.tabline',
-  version = false,
+  version = '*',
 
   config = function()
     require('mini.tabline').setup()

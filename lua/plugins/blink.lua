@@ -1,8 +1,10 @@
 return {
   'saghen/blink.cmp',
+  version = '*',
   dependencies = {
     'saghen/blink.lib',
   },
+
   event = 'VeryLazy',
 
   build = function()

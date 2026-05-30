@@ -1,6 +1,6 @@
 return {
 	'folke/tokyonight.nvim',
-	version = false,
+	version = '*',
 
   config = function()
     require('tokyonight').setup()

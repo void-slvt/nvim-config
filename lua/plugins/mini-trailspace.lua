@@ -1,7 +1,8 @@
 return {
   'nvim-mini/mini.trailspace',
-  version = false,
-  event = "VeryLazy",
+  version = '*',
+
+  event = 'VeryLazy',
 
   config = function()
     require('mini.trailspace').setup()

@@ -1,6 +1,7 @@
 return {
   'folke/trouble.nvim',
   version = false,
+
   event = 'VeryLazy',
 
   config = function()

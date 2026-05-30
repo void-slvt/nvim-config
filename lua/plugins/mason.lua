@@ -1,6 +1,6 @@
 return {
   'mason-org/mason.nvim',
-  version = false,
+  version = '*',
 
   config = function()
     require('mason').setup()

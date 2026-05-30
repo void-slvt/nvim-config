@@ -1,8 +1,7 @@
 return {
   'nvim-treesitter/nvim-treesitter',
+  version = '*',
   build = ':TSUpdate',
-  lazy = false,
-  version = false,
 
   config = function()
     require('nvim-treesitter').setup()

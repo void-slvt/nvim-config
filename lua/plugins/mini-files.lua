@@ -1,6 +1,6 @@
 return {
   'nvim-mini/mini.files',
-  version = false,
+  version = '*',
 
   config = function()
     require('mini.files').setup({

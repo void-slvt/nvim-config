@@ -1,7 +1,8 @@
 return {
   'nvim-mini/mini.pairs',
-  version = false,
-  event = "VeryLazy",
+  version = '*',
+
+  event = 'VeryLazy',
 
   config = function()
     require('mini.pairs').setup()

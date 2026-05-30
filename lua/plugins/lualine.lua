@@ -1,6 +1,6 @@
 return {
   'nvim-lualine/lualine.nvim',
-  version = false,
+  version = '*',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
 
   config = function()
