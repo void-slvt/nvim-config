@@ -1,6 +1,6 @@
 return {
   'nvim-treesitter/nvim-treesitter',
-  version = '*',
+  version = false,
   build = ':TSUpdate',
 
   config = function()

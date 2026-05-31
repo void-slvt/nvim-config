@@ -8,10 +8,10 @@ vim.diagnostic.config({
   virtual_text = true,
   signs = {
     text = {
-      [vim.diagnostic.severity.ERROR] = "",
-      [vim.diagnostic.severity.WARN]  = "",
-      [vim.diagnostic.severity.INFO]  = "",
-      [vim.diagnostic.severity.HINT]  = "",
+      [vim.diagnostic.severity.ERROR] = '',
+      [vim.diagnostic.severity.WARN]  = '',
+      [vim.diagnostic.severity.INFO]  = '',
+      [vim.diagnostic.severity.HINT]  = '',
     }
   },
   underline = true,
@@ -48,7 +48,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
   callback = function()
     vim.highlight.on_yank({
-      higroup = "IncSearch",
+      higroup = 'IncSearch',
       timeout = 150,
     })
   end,
@@ -62,5 +62,7 @@ vim.api.nvim_create_autocmd("CursorHold", {
 })
 
 -- Бинды
-vim.keymap.set('n', '<leader>e', function() require('mini.files').open() end, { desc = "Open mini.files" })
-vim.keymap.set('n', '<leader>d', function() require('trouble').toggle({mode='diagnostics'}) end, { desc = "Open diagnostics" })
+vim.keymap.set('n', '<leader>e', function() require('mini.files').open() end, { desc = 'Open mini.files' })
+vim.keymap.set('n', '<leader>d', function() require('trouble').toggle({ mode='diagnostics' }) end, { desc = 'Open diagnostics' })
+vim.keymap.set('n', '<leader>t', function() vim.cmd('terminal') end, { desc = 'Open new terminal' })
+vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]])
