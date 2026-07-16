@@ -2,7 +2,7 @@ return {
   'saghen/blink.cmp',
   version = '*',
   dependencies = {
-    'saghen/blink.lib',
+    { 'saghen/blink.lib', version = '*' }
   },
 
   event = 'VeryLazy',
